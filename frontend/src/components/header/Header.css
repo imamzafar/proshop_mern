@@ -1,0 +1,16 @@
+.navbar-custom-bg {
+    background-color: #000;
+  }
+  
+  .navbar-nav > a {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: medium;
+    margin-left: 1rem;
+  }
+  
+  .navbar-nav > a:hover {
+    color: grey !important;
+    /* font-weight: bold; */
+  }
+  
