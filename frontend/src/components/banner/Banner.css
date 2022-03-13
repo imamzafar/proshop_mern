@@ -6,4 +6,9 @@
   /* width: 110%;
   height: 110%; */
   cursor: pointer;
+  transform: scale(1.02);
+}
+
+.banner-top-img {
+  transition: all 0.2s ease-in-out;
 }

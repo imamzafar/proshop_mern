@@ -1,0 +1,22 @@
+.searchbox-buttom {
+  margin-left: 48px !important;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+.form-control {
+  border-radius: 10.25rem !important;
+}
+
+.icon-cog {
+  color: white;
+}
+
+.fa-cog {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchbox-form {
+    display: none !important;
+  }
+}

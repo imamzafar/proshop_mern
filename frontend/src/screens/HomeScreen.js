@@ -11,6 +11,9 @@ import Meta from "../components/Meta";
 import { listProducts } from "../actions/productActions";
 import Banner from "../components/banner/Banner";
 import BrandBanner from "../components/brandBanner/BrandBanner";
+import FeatureOfTheWeek from "../components/featureOfTheWeek/FeatureOfTheWeek";
+import FitsOnRotation from "../components/fitsOnRotation/FitsOnRotation";
+import EmailFooter from "../components/emailFooter/EmailFooter";
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
@@ -28,7 +31,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-      <Meta />
+      <Meta />  
       {!keyword ? (
         <ProductCarousel />
       ) : (
@@ -37,31 +40,22 @@ const HomeScreen = ({ match }) => {
         </Link>
       )}
 
-      <Container>
+    
         <Banner />
-        {/* <BrandBanner /> */}
-        <h1>Latest Products</h1>
-        {loading ? (
-          <Loader />
-        ) : error ? (
-          <Message variant="danger">{error}</Message>
-        ) : (
-          <>
-            <Row>
-              {products.map((product) => (
-                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                  <Product product={product} />
-                </Col>
-              ))}
-            </Row>
-            <Paginate
-              pages={pages}
-              page={page}
-              keyword={keyword ? keyword : ""}
-            />
-          </>
-        )}
-      </Container>
+    
+
+      <BrandBanner />
+      <FeatureOfTheWeek />
+    
+        <Banner />
+     
+      <FitsOnRotation />
+    
+        <Banner />
+      
+
+      <EmailFooter />
+    
     </>
   );
 };

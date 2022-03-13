@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import "./SearchBox.css";
 
 const SearchBox = ({ history }) => {
   const [keyword, setKeyword] = useState("");
@@ -14,7 +15,7 @@ const SearchBox = ({ history }) => {
   };
 
   return (
-    <Form onSubmit={submitHandler} inline style={{ display: "flex" }}>
+    <Form className='searchbox-form' onSubmit={submitHandler} inline style={{ display: "flex" }}> 
       <Form.Control
         type="text"
         name="q"
@@ -22,19 +23,21 @@ const SearchBox = ({ history }) => {
         placeholder="Search Products..."
         className="mr-sm-2 ml-sm-5"
       ></Form.Control>
-      <Button
+      {/* <Button
+        // className="searchbox-buttom"
         type="submit"
         variant="outline-success"
-        className="p-2"
+        className="p-2 searchbox-buttom"
         style={{
           marginLeft: "2rem",
           borderColor: "#ffd700",
-          color:'#ffd700'
+          color: "#ffd700",
         }}
       >
         Search
-      </Button>
+      </Button> */}
     </Form>
+    
   );
 };
 

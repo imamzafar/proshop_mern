@@ -1,16 +1,69 @@
 .navbar-custom-bg {
-    background-color: #000;
+  background-color: #000;
+}
+
+.navbar-nav > a {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: medium;
+  margin-left: 2rem;
+
+  display: flex;
+  user-select: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-nav > a:hover {
+  color: grey !important;
+  /* font-weight: bold; */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(233,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+
+  display: none !important;
+}
+.navbar-toggler .collapsed {
+  display: none;
+}
+
+button.navbar-toggler.collapsed {
+  display: none;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-bottom: 8px solid #fff;
+
+  margin-bottom: -20px;
+  /* position: absolute; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* left: 50%; */
+  /* display:  none; */
+  opacity: 0;
+}
+.arrow-down:hover {
+  /* display: block; */
+}
+
+#a:hover + #b {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  display: block;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
-  
-  .navbar-nav > a {
-    color: #fff !important;
-    font-weight: 500;
-    font-size: medium;
-    margin-left: 1rem;
-  }
-  
-  .navbar-nav > a:hover {
-    color: grey !important;
-    /* font-weight: bold; */
-  }
-  
+}

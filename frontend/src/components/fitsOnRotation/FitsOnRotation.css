@@ -1,0 +1,9 @@
+.fits-on-rotation-row > .col {
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.fits-on-rotation-row > .col:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}

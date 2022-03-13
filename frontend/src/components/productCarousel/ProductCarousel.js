@@ -46,7 +46,7 @@ const ProductCarousel = () => {
         <Carousel.Item key={product._id}>
           <img
             className="d-block w-100"
-            src="https://cdnb.artstation.com/p/assets/images/images/028/692/321/large/vineet-joshi-shoes-banner.jpg?1595238969"
+            src="https://culture-kings.imgix.net/files/BACK-IN-STOCK_AVATAR_2022_FEB_hero-desktop_-_AU_2000x.jpg?v=1645761704&auto=compress,format"
             alt="First slide"
             style={{borderRadius:'0 !important'}}
           />

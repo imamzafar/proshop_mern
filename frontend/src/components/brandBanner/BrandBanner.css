@@ -1,0 +1,31 @@
+/* .BrandBannerTitle:before {
+  content: "";
+  display: block;
+  width: 530px;
+  height: 1px;
+  background: #000000;
+  left: 0;
+  top: 65%;
+  position: absolute;
+  margin-left: 80px;
+  opacity: 0.3;
+}
+
+.BrandBannerTitle:after {
+  content: "";
+  display: block;
+  width: 530px;
+  height: 1px;
+  background: #000000;
+  right: 0;
+  margin-right: 80px;
+  top: 65%;
+  opacity: 0.3;
+  position: absolute;
+} */
+
+.BrandbannerCol {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px !important;
+}

@@ -1,0 +1,14 @@
+.footerColumnTitle {
+  font-weight: 700;
+  margin-bottom: 30px !important;
+  font-size: 17px !important;
+}
+.footerColumn > .row {
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+
+.footerColumn > .row:hover {
+  cursor: pointer;
+  color: #c2c1c1;
+}

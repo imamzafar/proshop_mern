@@ -40,31 +40,45 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link className="nav-custom-font-color" href="#home">
-                MEN
+                <div id="a" style={{ paddingBottom: "18px" }}>
+                  SLIDES
+                </div>
+                <div id="b" class="arrow-down"></div>
               </Nav.Link>
               <Nav.Link className="nav-custom-font-color" href="#link">
-                WOMEN
+                <div id="a" style={{ paddingBottom: "18px" }}>
+                  SNEAKERS
+                </div>
+                <div id="b" class="arrow-down"></div>
               </Nav.Link>
               <Nav.Link className="nav-custom-font-color" href="#link">
-                KIDS
+                <div id="a" style={{ paddingBottom: "18px" }}>
+                  BOOTS
+                </div>
+                <div id="b" class="arrow-down"></div>
               </Nav.Link>
+
               <Nav.Link className="nav-custom-font-color" href="#link">
-                MUSIC
+                <div id="a" style={{ paddingBottom: "18px" }}>
+                  CROCS
+                </div>
+                <div id="b" class="arrow-down"></div>
               </Nav.Link>
+
               <Nav.Link className="nav-custom-font-color" href="#link">
-                SPORT
-              </Nav.Link>
-              <Nav.Link className="nav-custom-font-color" href="#link">
-                RELEASES
-              </Nav.Link>
-              <Nav.Link className="nav-custom-font-color" href="#link">
-                SALES
+                <div id="a" style={{ paddingBottom: "18px" }}>
+                  SLIPPERS
+                </div>
+                <div id="b" class="arrow-down"></div>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <SearchBox />
         </Container>
+        <i style={{color:'white',fontSize:'1.6rem', marginRight:'1rem'}} class="fa-solid fa-user"></i>
+        <i style={{color:'white',fontSize:'1.6rem',  marginRight:'2rem'}}  class="fa-solid fa-bag-shopping"></i>
       </Navbar>
+
       {/* </header> */}
     </>
   );
